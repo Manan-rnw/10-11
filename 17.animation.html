@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            height: 50px;
+            width: 50px;
+            
+            /* animation-name: abc;
+            animation-iteration-count: infinite;
+            animation-duration: 2s; */
+            animation: abc 2s infinite linear;
+            position: absolute;
+        }
+
+        .main {
+            border: none;
+            border-bottom: solid 5px black;
+            height: 500px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        @keyframes abc {
+
+            0% {
+                top: 0;
+                /* left: 0; */
+                transform: rotate(360deg);
+            } 
+
+            50% {
+                top: 450px;
+            } 
+
+            100% {
+                top: 0;
+            }
+      
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+            <img class="box" src="football.png" alt="">
+    </div>
+</body>
+</html>

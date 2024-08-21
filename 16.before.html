@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: red;
+        position: relative;
+      }
+
+      h1::before {
+        content: "";
+        position: absolute;
+        border: solid 2px black;
+        width: 380px;
+        height: 20px;
+        animation: abc 3s;
+      } 
+      button{
+        position: relative;
+        z-index: 3;
+        height: 22px;
+        width: 90px;
+       border: solid 2PX black;
+       border-radius: 30px;
+      }
+      button:hover::before{
+        border-radius: 30px;
+        background: linear-gradient(to right,red ,aqua ,blue);
+        content: "";
+        position: absolute;
+        width: 87PX;
+        height: 18PX;
+        animation: abc 3s;
+        z-index: -2;
+        /* top: 0PX;
+        left: 0;
+        */
+      }
+
+      @keyframes abc {
+        0% {
+          width: 0px;
+        } 
+
+        100% {
+          background-color: red;
+          height: 18px;
+          width: 87px;
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <BUtton>CLICK ME</BUtton>
+  </body>
+</html>

@@ -13,64 +13,40 @@ Flex Flow (Flex Direction Flex Wrap) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .parent {
-            display: flex;
-             align-items: center;
-             justify-content: center;
-            flex-wrap: wrap-reverse;
-            gap: 50px;
-            /* justify-content: start; */
-            /* justify-content: end; */
-            /* justify-content: space-between; */
-            /* justify-content: space-around; */
-            /* justify-content: space-evenly; */
-     
-        }
-      .card {
-        height: 300px;
-        width: 300px;
-        border: solid 3px black;
-      
-     
+      * {
+        margin: 0;
+        padding: 0;
       }
-      nav {
-        background-color: black;
-        padding: 30px;
+
+      .parent {
         display: flex;
-        flex-direction: column-reverse;
-        gap: 30px;
-        /* justify-content: flex-end;
-        gap: 50px; */
+         /* Stack cards vertically */
+        justify-content: center;
+        gap: 50px;
+      }
+
+      .card {
+        display: flex;
+        align-items: stretch ; /* Stretch items vertically */
+        border: solid 3px black;
+        background-color: green;
+    
       }
     </style>
   </head>
   <body>
-    <!-- <nav>
-        <a href="#">HOME 1</a>
-        <a href="#">HOME 2</a>
-        <a href="#">HOME 3</a>
-        <a href="#">HOME 4</a>
-        <a href="#">HOME 5</a>
-        <a href="#">HOME 6</a>
-    </nav> -->
     <div class="parent">
       <div class="card">
-        <h1>1</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, numquam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+        numquam!
       </div>
       <div class="card">
-        <h1>2</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, numquam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+        numquam!
       </div>
       <div class="card">
-        <img src="1.jpg" alt="" height="200px">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, numquam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+        numquam!
       </div>
     </div>
   </body>
