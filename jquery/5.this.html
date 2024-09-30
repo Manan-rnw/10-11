@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <p>
+      1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
+      cumque.
+    </p>
+    <p>
+      2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
+      cumque.
+    </p>
+
+    <p>
+      3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
+      cumque.
+    </p>
+    <p>
+      4 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
+      cumque.
+    </p>
+    <p>
+      5 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
+      cumque.
+    </p>
+    <p>
+      6 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
+      cumque.
+    </p>
+    <p>
+      7 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
+      cumque.
+    </p>
+    <p>
+      8 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
+      cumque.
+    </p>
+
+
+    <button>click me</button>
+
+    <script>
+      $(document).ready(function () {
+        $("p").click(function () {
+          $(this).hide();
+        });
+
+
+        $("button").click(function(){
+            $("p").show();
+        })
+      });
+    </script>
+  </body>
+</html>

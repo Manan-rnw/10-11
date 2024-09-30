@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button class="in">FADE IN</button>
+    <button class="out">FADE out</button>
+    <button class="toggle">FADE toggle</button>
+    <button class="to">FADE to</button>
+
+    
+    <script>
+        $(document).ready(function(){
+            
+            $(".out").click(function(){
+                $(".box").fadeOut(3000);
+            });
+
+
+            $(".in").click(function(){
+                $(".box").fadeIn();
+            });
+
+
+            $(".toggle").click(function(){
+                $(".box").fadeToggle();
+            });
+
+
+            $(".to").click(function(){
+                $(".box").fadeTo("slow" , 0.15);
+            });
+        })
+    </script>
+
+</body>
+</html>

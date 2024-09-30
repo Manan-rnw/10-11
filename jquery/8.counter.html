@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+        #counter{
+  text-align: center;
+  display: flex;
+  margin:0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #0000ff;
+  padding: 0px 0px;
+  width: 90%;
+}
+#counter .item{
+  background: #fff;
+  width: 200px;
+  padding: 35px 40px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 38px -8px rgba(0,0,0,0.34);
+-moz-box-shadow: 0px 0px 38px -8px rgba(0,0,0,0.34);
+box-shadow: 0px 0px 38px -8px rgba(0,0,0,0.34);
+} 
+#counter .item .count{
+  color: #000000;
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+#counter .item h3{
+  color: #4f4e28;
+  text-transform: capitalize;
+}
+    </style>
+  </head>
+  
+  <body>
+    <div id="counter">
+
+        <div class="item">
+           <h1 class="count" data-number="50" ></h1>
+           <h3 class="text">surya</h3>
+        </div>
+        <div class="item">
+           <h1 class="count" data-number="50" ></h1>
+           <h3 class="text">shubh</h3>
+        </div>
+        </div>
+        
+        <div id="counter">
+        <div class="item">
+           <h1 class="count" data-number="2040" ></h1>
+           <h3 class="text">paji</h3>
+        </div>
+        <div class="item">
+           <h1 class="count" data-number="50" ></h1>
+           <h3 class="text">harsh</h3>
+        </div>
+      
+      </div>
+      <script>
+        let count = document.querySelectorAll(".count")
+let arr = Array.from(count)
+
+
+
+arr.map(function(item){
+  let startnumber = 0
+
+  function counterup(){
+  startnumber++
+  item.innerHTML= startnumber
+   
+  if(startnumber == item.dataset.number){
+      clearInterval(stop)
+  }
+}
+
+let stop =setInterval(function(){
+  counterup()
+},50)
+
+})
+      </script>
+  </body>
+</html>

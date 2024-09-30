@@ -1,0 +1,15 @@
+:root {
+    --color : red;
+    --bg : green;
+    --padding : 30px;
+}
+
+
+
+p {
+    color: var(--color);
+    background-color: var(--bg);
+    font-size: var(--padding);
+}
+
+

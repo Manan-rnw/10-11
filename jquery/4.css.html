@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <style>
+        .one {
+            background-color: red;
+        }
+
+        .two {
+            background-color: gray;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+      praesentium.
+    </h1>
+    <button class="btn-1">click me 1</button>
+    <button class="btn-2">click me 2</button>
+
+    <script>
+        $(document).ready(function(){
+            $(".btn-1").click(function(){
+                // $("h1").css({color : "red" , background : "black"});
+                // $("h1").addClass("one");
+
+            });
+
+            $(".btn-2").click(function(){
+                // $("h1").css({color : "red" , background : "black"});
+                // $("h1").removeClass("one");
+
+            })
+        })
+    </script>
+  </body>
+</html>
